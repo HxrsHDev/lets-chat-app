@@ -4,7 +4,7 @@ const http = require('http').createServer(app)
 const PORT = process.env.PORT || 3000
 
 http.listen(PORT, () =>{
-    console.log(`listening in port ${PORT} motherfucker`);
+    console.log(`listening in port ${PORT}`);
 })
 app.use(express.static(__dirname + '/public'))
 app.get('/', (req, res)=> res.sendFile(__dirname + '/index.html'))
